@@ -7,7 +7,7 @@ import { ThemeProvider } from "./context/ThemeProvider.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/frontend-quiz">
       <ThemeProvider>
         <App />
       </ThemeProvider>
