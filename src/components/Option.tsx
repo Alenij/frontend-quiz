@@ -30,6 +30,11 @@ const Option = ({
   let border = "";
   let bg = "bg-[#F4F6FA]";
 
+  if (!isSubmitted && selectedOption === index) {
+    border = "border-4 border-[#A729F5]";
+    bg = "bg-[#A729F5]";
+  }
+
   if (isSubmitted) {
     if (selectedOption === index && text === answer) {
       border = "border-4 border-[#2FD887]";

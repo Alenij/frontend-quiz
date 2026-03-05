@@ -19,7 +19,7 @@ const TopicCard = ({
         onClick={() =>
           navigate("/quiz", { state: { topic: topic, icon, color } })
         }
-        className={`flex cursor-pointer items-center ${isDark ? "bg-[#3B4D66]" : "bg-white"} gap-3 mb-5 p-3 lg:p-4 rounded-2xl hover:-translate-1 transition-all duration-400 ease-in-out`}
+        className={`flex items-center ${isDark ? "bg-[#3B4D66]" : "bg-white"} gap-3 mb-5 p-3 lg:p-4 rounded-2xl hover:-translate-1 transition-all duration-400 ease-in-out`}
       >
         <div style={{ backgroundColor: color }} className="rounded-md">
           <img src={icon} alt={topic} className="w-10 h-10 p-1" />
