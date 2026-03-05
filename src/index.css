@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+.bg-pattern {
+  background-image: url("/src/assets/images/pattern-background-mobile-light.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-pattern-dark {
+  background-image: url("/src/assets/images/pattern-background-mobile-dark.svg");
+}
+
+@media (min-width: 768px) {
+  .bg-pattern {
+    background-image: url("/src/assets/images/pattern-background-tablet-light.svg");
+  }
+}
+
+@media (min-width: 1024px) {
+  .bg-pattern {
+    background-image: url("/src/assets/images/pattern-background-desktop-light.svg");
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-pattern-dark {
+    background-image: url("/src/assets/images/pattern-background-tablet-dark.svg");
+  }
+}
+
+@media (min-width: 1024px) {
+  .bg-pattern-dark {
+    background-image: url("/src/assets/images/pattern-background-desktop-dark.svg");
+  }
+}
