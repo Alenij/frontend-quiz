@@ -25,7 +25,7 @@ const TopicCard = ({
           <img src={icon} alt={topic} className="w-10 h-10 p-1" />
         </div>
         <p
-          className={`text-xl ${isDark ? "bg-[#3B4D66]" : "bg-white"} font-medium`}
+          className={`text-xl ${isDark ? "text-white" : "text-[#3B4D66]"} font-medium`}
         >
           {topic}
         </p>
